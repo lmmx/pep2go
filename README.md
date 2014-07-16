@@ -1,4 +1,4 @@
-pep2GO
+pep2go
 ======
 
 Responsive R script to automate GO annotation incorporation into TSV files
