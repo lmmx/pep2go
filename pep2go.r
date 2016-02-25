@@ -8,8 +8,8 @@ nrml <- system('normal=`tput sgr0`;echo "${normal}"', intern=TRUE)
 
 library("biomaRt")
 cat("Loading ensembl data...\n")
-ensembl <- useMart("ensembl", dataset="hsapiens_gene_ensembl")
-# Alternative if biomart is down: ensembl = useMart("ensembl", dataset="hsapiens_gene_ensembl", host="dec2013.ensembl.org", path="biomart/martservice", archive=FALSE)
+ensembl <- useMart("ENSEMBL_MART_ENSEMBL", dataset="hsapiens_gene_ensembl", host="www.ensembl.org")
+# Alternative if biomart is down: host="jul2015.archive.ensembl.org", path="biomart/martservice", archive=FALSE)
 cat('Loaded H. sapiens genome data\n\n')
 
 if (nargs==0) {
